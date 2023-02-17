@@ -6,6 +6,6 @@
 
 ### Classification Codes : 
 
-- Sign Alphabet (37 output labels) : Click [Here](https://smrayeed.github.io/univ.html)
+- Sign Alphabet (37 output labels) : Click [Here](https://github.com/SMRayeed/BdSL47-Recognition/blob/main/Codes/BdSL37%20Finalized%20Code.ipynb)
 
 - Sign Alphabet and Digits (47 output labels) : Click [Here](https://smrayeed.github.io/univ.html)
