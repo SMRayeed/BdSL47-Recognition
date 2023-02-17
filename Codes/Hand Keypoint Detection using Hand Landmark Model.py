@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 import cv2
 import mediapipe as mp
 import os
@@ -8,10 +5,9 @@ import os
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
 
-#D:\test
-#output_folder = "E:\\BSL Kaggle\\BSL Dataset\\36\\Output"
-output_folder = "E:\\x\\Output"
+output_folder = "E:\\Sign X\\Output" # output image directory
 directory_path = output_folder
+
 if not os.path.exists(directory_path):
     os.mkdir(directory_path)
 
@@ -50,13 +46,13 @@ hands = mp_hands.Hands(
     min_detection_confidence=0.5)
 
 filelist = [] 
-fileDirectory = "E://x//"
-imageFileType = ".jpg"
+fileDirectory = "E://Sign X//Input//" # input image directory
+imageFileType = ".jpg" #filetype : .jpg / .png
 fileName = ""
+label = 0 # sign/image label (varies from 0 to 37)
 
 for i in range(1, 101):
-  #i = (str(i).zfill(3))
-  fileName = fileDirectory + "x ("+ str(i) +")" + imageFileType 
+  fileName = fileDirectory + "Sign X - Sample ("+ str(i) +")" + imageFileType  #input image file name
   filelist.append(fileName)
   
 
@@ -100,7 +96,7 @@ for idx, files in enumerate(filelist):
                              hand_landmarks.landmark[18].x, hand_landmarks.landmark[18].y, hand_landmarks.landmark[18].z,
                              hand_landmarks.landmark[19].x, hand_landmarks.landmark[19].y, hand_landmarks.landmark[19].z,
                              hand_landmarks.landmark[20].x, hand_landmarks.landmark[20].y, hand_landmarks.landmark[20].z, 
-                             9])
+                             label])
 
         print('Hand Keypoints :', hand_landmarks)
 
@@ -111,6 +107,6 @@ for idx, files in enumerate(filelist):
         )
         mp_drawing.draw_landmarks(annotated_image, hand_landmarks, mp_hands.HAND_CONNECTIONS)
     
-    cv2.imwrite(os.path.join(directory_path , 'Output Image -' + str(idx+1) + '.jpg'), cv2.flip(annotated_image, 1))
+    cv2.imwrite(os.path.join(directory_path , 'Output Image - ' + str(idx+1) + '.jpg'), cv2.flip(annotated_image, 1)) #output image file name
 
 hands.close()
