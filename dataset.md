@@ -2,7 +2,7 @@
 
 ## Overview
 
-The BdSL47 dataset, generated and analyzed as part of the current research study, is publicly available in Mendeley Data at [https://data.mendeley.com/datasets/pbb3w3f92y/1]([https://doi.org/10.7910/DVN/EPIC3H](https://data.mendeley.com/datasets/pbb3w3f92y/1)). This dataset is designed for Sign Language Recognition and includes statistical information as detailed below.
+The BdSL47 dataset, generated and analyzed as part of the current research study, is publicly available in Mendeley Data at [https://data.mendeley.com/datasets/pbb3w3f92y/1](https://data.mendeley.com/datasets/pbb3w3f92y/1). This dataset is designed for Sign Language Recognition and includes statistical information as detailed below.
 
 ## Dataset Statistics
 
