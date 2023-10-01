@@ -7,7 +7,7 @@ Sign Language Recognition (SLR) is crucial for enabling communication between th
 
 <hr>
 
-### <b>Dataset</b> : The Complete Dataset is available [here](https://doi.org/10.7910/DVN/EPIC3H)
+### <b>Dataset</b> : The Complete Dataset is available [here](https://data.mendeley.com/datasets/pbb3w3f92y/1)
 
 <hr>
 
